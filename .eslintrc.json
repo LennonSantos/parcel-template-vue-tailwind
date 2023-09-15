@@ -1,0 +1,23 @@
+{
+  "extends": ["plugin:vue/vue3-recommended", "standard", "plugin:tailwindcss/recommended"],
+  "plugins": [
+    // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-files
+    // required to lint *.vue files
+    "vue"
+  ],
+  "rules": {
+    "eqeqeq": "error",
+    "no-console": "warn"
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "ignorePatterns": ["node_modules", "build", "dist", "public", ".parcel-cache"]
+}
